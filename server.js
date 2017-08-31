@@ -41,7 +41,7 @@ server.get('/:alias/:alert/:sound*?', function(req, res){
   		//filters: [
 	  	//	{"field": "tag", "key": "key", "relation": "=", "value": alias}, 
 		//]
-		contents: {"en": "English Message"},
+		contents: {"en": message},
 		included_segments: ["All"]
 	};
 
