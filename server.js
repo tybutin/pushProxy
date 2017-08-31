@@ -1,7 +1,7 @@
 //var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
 //var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 var apiKey = process.env.apiKey;
-Var auth = process.env.auth;
+var auth = process.env.auth;
 //
 //self.app = express();
 //self.ipaddress = '0.0.0.0';
