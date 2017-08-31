@@ -1,5 +1,5 @@
-var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
-var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+//var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
+//var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 var apiKey = process.env.apiKey;
 //
 //self.app = express();
@@ -9,8 +9,8 @@ var apiKey = process.env.apiKey;
 var express = require('express');
 var server = express();
 var request = require('request-json');
-var client = request.newClient('https://jbossunifiedpush-camon.rhcloud.com/ag-push/');
-var client1 = request.newClient('https://jbossunifiedpush1-camon.rhcloud.com/ag-push/');
+//var client = request.newClient('https://jbossunifiedpush-camon.rhcloud.com/ag-push/');
+//var client1 = request.newClient('https://jbossunifiedpush1-camon.rhcloud.com/ag-push/');
 
 // server.param('PushApplicationID', /^\d+$/);
 // server.param('MasterSecret', /^\d+$/);

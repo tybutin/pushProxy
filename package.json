@@ -8,7 +8,18 @@
     "request-json": "~0.4.10"
   },
   "scripts": {
-  "start": "node server.js"
+    "start": "node server.js"
   },
-  "main": "server.js"
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tybutin/pushProxy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tybutin/pushProxy/issues"
+  },
+  "homepage": "https://github.com/tybutin/pushProxy#readme"
 }
