@@ -34,7 +34,7 @@ server.get('/:alias/:alert/:sound*?', function(req, res){
     	};
 
 	// préparation du message
-
+	console.log( "alias : " + alias)
 	var message = { 
   		app_id: apiKey,
   		contents: {"en": "Alarme "+ [req.params.alert.replace(/_/g,' ')]},
@@ -81,5 +81,5 @@ server.get('/:alias/:alert/:sound*?', function(req, res){
 });
 
 server.listen(server.get('port'), function () {
-  console.log( "Listening on " + server.get('port') + "whith apiKey " + apiKey)
+  console.log( "Listening on " + server.get('port') + " with apiKey " + apiKey)
 });
