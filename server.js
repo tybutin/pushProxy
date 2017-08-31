@@ -78,6 +78,6 @@ server.get('/:alias/:alert/:sound*?', function(req, res){
 	sendNotification(message);
 });
 
-server.listen(app.get('port'), function () {
-  console.log( "Listening on " + app.get('port') )
+server.listen(server.get('port'), function () {
+  console.log( "Listening on " + server.get('port') )
 });
