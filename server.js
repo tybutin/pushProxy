@@ -9,6 +9,9 @@ var apiKey = process.env.apiKey;
 var express = require('express');
 var server = express();
 var request = require('request-json');
+server.set('port', (process.env.PORT || 5000));
+
+
 //var client = request.newClient('https://jbossunifiedpush-camon.rhcloud.com/ag-push/');
 //var client1 = request.newClient('https://jbossunifiedpush1-camon.rhcloud.com/ag-push/');
 
