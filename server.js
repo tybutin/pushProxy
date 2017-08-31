@@ -37,10 +37,11 @@ server.get('/:alias/:alert/:sound*?', function(req, res){
 
 	var message = { 
   		app_id: apiKey,
-  		contents: {"CamOn": message},
+  		//contents: {"CamOn": message},
   		//filters: [
 	  	//	{"field": "tag", "key": "key", "relation": "=", "value": alias}, 
 		//]
+		contents: {"en": "English Message »},
 		included_segments: ["All"]
 	};
 
