@@ -39,7 +39,7 @@ server.get('/:alias/:alert/:sound*?', function(req, res){
   		app_id: apiKey,
   		contents: {"en": "Alarme "+ [req.params.alert.replace(/_/g,' ')]},
   		filters: [
-	  		{"field": "tag", "key": "user", "relation": "=", "value": alias}, 
+	  		{"field": "tag", "key": "user", "relation": "=", "value": alias}
 		]
 		//included_segments: ["All"]
 	};
