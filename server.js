@@ -5,7 +5,7 @@ var apiKey = process.env.apiKey;
 //self.app = express();
 //self.ipaddress = '0.0.0.0';
 //self.port = 8080;
-
+Basic Y2JlNDk2ZTctOGU4OC00NTIyLWIxMmYtZDUxODhhYmJhZmVm
 var express = require('express');
 var server = express();
 var request = require('request-json');
@@ -47,7 +47,7 @@ server.get('/:alias/:alert/:sound*?', function(req, res){
 	var sendNotification = function(data) {
   		var headers = {
     			"Content-Type": "application/json; charset=utf-8",
-    			"Authorization": "Basic NGEwMGZmMjItY2NkNy0xMWUzLTk5ZDUtMDAwYzI5NDBlNjJj"
+    			"Authorization": "Basic Y2JlNDk2ZTctOGU4OC00NTIyLWIxMmYtZDUxODhhYmJhZmVm"
   		};
   
   		var options = {
