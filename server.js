@@ -79,5 +79,5 @@ server.get('/:alias/:alert/:sound*?', function(req, res){
 });
 
 server.listen(server.get('port'), function () {
-  console.log( "Listening on " + server.get('port') )
+  console.log( "Listening on " + server.get('port') + "whith apiKey " + apiKey)
 });
