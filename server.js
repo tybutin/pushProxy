@@ -78,7 +78,7 @@ server.get('/:alias/:alert/:sound*?', function(req, res){
 	};
 
 	sendNotification(message);
-  response.send("Ok");
+  res.send("Ok");
 });
 
 server.listen(server.get('port'), function () {
