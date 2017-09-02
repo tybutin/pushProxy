@@ -24,7 +24,7 @@ server.set('port', (process.env.PORT || 5000));
 server.get('/:alias/:alert/:sound*?', function(req, res){
 	console.log(req.params);
 	var reg = /^[0-9]$/;
-	var alias = [req.params.alias];
+	var alias = req.params.alias;
   //var data = {
   //  	"alias": [req.params.alias],
   //  	"message": {
