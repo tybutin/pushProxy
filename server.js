@@ -39,7 +39,8 @@ server.get('/:alias/:alert/:sound*?', function(req, res){
   	app_id: apiKey,
   	contents: {
       "en": "Alarme "+ [req.params.alert.replace(/_/g,' ')],
-      "ios_sound": reg.test(req.params.sound) ? "" + req.params.sound + ".caf" : "mySound.caf"
+      //"ios_sound": reg.test(req.params.sound) ? "" + req.params.sound + ".caf" : "mySound.caf"
+      "ios_sound": nil
     },
   	//filters: [
 	  //		{"field": "tag", "key": "user", "relation": "=", "value": alias}
