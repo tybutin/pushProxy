@@ -25,13 +25,13 @@ server.get('/:alias/:alert/:sound*?', function(req, res){
 	console.log(req.params);
 	var reg = /^[0-9]$/;
 	var alias = [req.params.alias];
-  var data = {
-    	"alias": [req.params.alias],
-    	"message": {
-     		 "alert":"Alarme "+ [req.params.alert.replace(/_/g,' ')],
-			   "sound":reg.test(req.params.sound) ? "" + req.params.sound + ".caf" : "mySound.caf"
-		  }
-  };
+  //var data = {
+  //  	"alias": [req.params.alias],
+  //  	"message": {
+  //  		 "alert":"Alarme "+ [req.params.alert.replace(/_/g,' ')],
+	//		   "sound":reg.test(req.params.sound) ? "" + req.params.sound + ".caf" : "mySound.caf"
+	//	  }
+  //};
 
 	// préparation du message
 	
